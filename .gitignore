@@ -4,3 +4,4 @@ keylog.txt
 encrypted_log.txt
 screenshots/
 __pycache__/
+*.zip
