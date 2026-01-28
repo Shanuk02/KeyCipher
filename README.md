@@ -53,27 +53,37 @@ It is **strongly recommended** to run this project inside a **Python virtual env
 
 ### 1️⃣ Clone the repository
 
-bash
+
 git clone https://github.com/Shanku02/KeyCipher.git
+
+
 cd KeyCipher
 
 2️⃣ Create a virtual environment
+
 python3 -m venv venv
 
 3️⃣ Activate the virtual environment
 
-Linux / Kali / macOS
+Linux / Kali / macOS:
+
+
 source venv/bin/activate
 
-Windows
+Windows:
+
+
 venv\Scripts\activate
 
 You should now see (venv) in your terminal.
 
 4️⃣ Install required modules
+
+
 pip install pynput cryptography pyautogui
 
 5️⃣ Run the program
+
 python KeyCipher.py
 
 ## 🔐 Security & Ethics Note
