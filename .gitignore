@@ -1,0 +1,6 @@
+.env
+secret.key
+keylog.txt
+encrypted_log.txt
+screenshots/
+__pycache__/
